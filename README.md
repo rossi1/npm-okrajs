@@ -7,13 +7,13 @@ JS library for implementing Okra
 Using npm:
 
 ```bash
-$ npm install okra-npm
+$ npm install npm-okrajs
 ```
 
 Using yarn:
 
 ```bash
-$ yarn add okra-npm
+$ yarn add npm-okrajs
 ```
 
 Using CDN:
@@ -25,7 +25,7 @@ Using CDN:
 ## Usuage
 For JS frameworks import it and use
 ```js
-import Okra from 'okra-npm'
+import Okra from 'npm-okrajs'
 ```
 For others, just use
 ```js
