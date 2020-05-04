@@ -1,0 +1,22 @@
+{
+  "name": "okra-npm",
+  "version": "1.0.0",
+  "description": "JS library for implementing Okra",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okraHQ/okra-npm.git"
+  },
+  "keywords": [
+    "Okra",
+    "OkraJs",
+    "Okrajs",
+    "Okra-npm"
+  ],
+  "author": "Laniran Peter <laniranpeter@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/okraHQ/okra-npm/issues"
+  },
+  "homepage": "https://github.com/okraHQ/okra-npm#readme"
+}
