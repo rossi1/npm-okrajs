@@ -1,2 +1,4 @@
 dist/okra.js
 .vscode
+scripts
+appspec.yml
