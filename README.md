@@ -74,6 +74,8 @@ Okra.buildWithShortUrl({
 |  `options`            | `Object`       | false               |                     | You can pass a object custom values eg id
 |  `onSuccess`          | `Function`     | false               |                     | Action to perform after widget is successful
 |  `onClose`            | `Function`     | false               |                     | Action to perform if widget is closed
+|  `onError`            | `Function`     | false               |                     | Action to perform on widget Error
+|  `BeforeClose`        | `Function`     | false               |                     | Action to perform before widget close
 
 
 ## Okra.buildWithShortUrl Options
