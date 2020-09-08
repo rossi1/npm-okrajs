@@ -19,7 +19,7 @@ $ yarn add npm-okrajs
 Using CDN:
 
 ```html
-<script src="https://cdn.okra.ng/v1/bundle.js"></script>
+<script src="https://cdn.okra.ng/v2/bundle.js"></script>
 ```
 
 ## Usuage
@@ -29,11 +29,13 @@ import Okra from 'npm-okrajs'
 ```
 For others, just use
 ```js
+
 Okra.buildWithOptions({
     name: 'Peter the Builder',
     env: 'production-sandbox',
-    key: '', //Your key from the Okra dashboard
-    token: '', //your token from the okra dashboard
+    app_id: ''// app_id from your app builder
+    key: '', // Your key from the Okra dashboard
+    token: '', // Your token from the okra dashboard
     onSuccess: function(data){
         console.log('options success', data)
     },
@@ -41,6 +43,8 @@ Okra.buildWithOptions({
         console.log('options close')
     }
 })
+
+// OR
 
 Okra.buildWithShortUrl({
   short_url: '', //Your short url from the link builder
@@ -52,6 +56,7 @@ Okra.buildWithShortUrl({
 
 |Name                   | Type           | Required            | Default Value       | Description         |
 |-----------------------|----------------|---------------------|---------------------|---------------------|
+|  `app_id `            | `String`       | true                |                     | Your app id from your Okra Dashboard.
 |  `key `               | `String`       | true                |                     | Your public key from your Okra Dashboard.
 |  `token `             | `String`       | true                |                     | Your token from your Okra Dashboard.
 |  `env `               | `String`       | false               |`production`         | production(live)/production-sandbox (test)
@@ -63,9 +68,6 @@ Okra.buildWithShortUrl({
 |  `filter`             | `Object`       | false               |                     | Filter for widget
 |  `isCorporate`        | `Boolen`       | false               | `false`             | Corporate or Individual account
 |  `connectMessage`     | `String`       | false               |                     | Instruction to connnect account
-|  `guarantors.status`  | `String`       | false               |                     | 
-|  `guarantors.message` | `String`       | false               |                     | 
-|  `guarantors.number`  | `Number`       | false               |                     | 
 |  `widget_success`     | `String`       | false               |                     | Widget Success Message
 |  `widget_failed`      | `String`       | false               |                     | Widget Failed Message
 |  `callback_url`       | `String(Url)`  | false               |                     | 
@@ -82,7 +84,7 @@ Okra.buildWithShortUrl({
 
 |Name                   | Type           | Required            | Description         |
 |-----------------------|----------------|---------------------|---------------------|
-|  `short_ur`           | `String`       | true                | Your generated url from link builder.
+|  `short_url`          | `String`       | true                | Your generated url from link builder.
 |  `onSuccess`          | `Function`     | false               | Action to perform after widget is successful
 |  `onClose`            | `Function`     | false               | Action to perform if widget is closed
 |  `onError`            | `Function`     | false               | Action to perform on widget Error
