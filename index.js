@@ -1,3 +1,3 @@
-import Okra from './dist/bundle'
-
-export default Okra
+/* eslint-disable no-undef */
+const Okra = require("./dist/bundle");
+module.exports = Okra;
