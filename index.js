@@ -1,3 +1,2 @@
-import Okra from './dist/bundle'
-
-export default Okra
+const Okra = require("./dist/bundle");
+module.exports = Okra;
