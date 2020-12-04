@@ -97,7 +97,9 @@ Okra.buildWithShortUrl({
 |  `BeforeClose`        | `Function`     | false               | Action to perform before widget close
 
 
-Need more options? Try our App Builder! [Click here to get started](https://dash.okra.ng/link-builder)
+## Need more options? 
+Try our App Builder! [Click here to get started](https://dash.okra.ng/link-builder)
+
 ## Other information
 For enquires and questions, contact
 - [@oreace](https://github.com/oreace)
