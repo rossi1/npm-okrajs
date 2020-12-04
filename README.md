@@ -47,7 +47,13 @@ Okra.buildWithOptions({
 // OR
 
 Okra.buildWithShortUrl({
-  short_url: '', //Your short url from the link builder
+    short_url: '', //Your short url from the link builder
+    onSuccess: function(data){
+        console.log('options success', data)
+    },
+    onClose: function(){
+        console.log('options close')
+    }
 })
 ```
 
@@ -91,6 +97,7 @@ Okra.buildWithShortUrl({
 |  `BeforeClose`        | `Function`     | false               | Action to perform before widget close
 
 
+Need more options? Try our App Builder! [Click here to get started](https://dash.okra.ng/link-builder)
 ## Other information
 For enquires and questions, contact
 - [@oreace](https://github.com/oreace)
